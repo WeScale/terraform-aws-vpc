@@ -1,13 +1,13 @@
 # terraform-aws-vpc
-- Terraform module to provision a VPC with all elements(subnets ,internet getway,nat getway,routes tables).
+- erraform module to provision a VPC with all elements(subnets ,internet getway,nat getway,routes tables).
 - it's an opensource module under GPL license
 ## Features
 
 ## Usage
 ```
 module "vpc-wsc" {
-  source               = "mehdi-wsc/vpc-wsc/aws"
-  version              = "0.0.3"
+  source  = "WeScale/vpc/aws"
+  version = "1.0.0"
   group                = "group"
   env                  = "dev"
   owner                = "github"
@@ -28,7 +28,7 @@ module "vpc-wsc" {
     * Aws Subnet :  subnet is a logical subdivision of an IP network.
     * Internet Getway IGW :An Internet Gateway is a logical connection between an Amazon VPC and the Internet.
     * Nat Getway :A NAT getway configures to forward traffic to the Internet.
-    * Route Tables: it's list of routes .
+    * Route Tables: it's list of routes.
 
 
 ## Input Variables:

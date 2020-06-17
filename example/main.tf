@@ -3,8 +3,9 @@ provider "aws" {
 }
 
 module "vpc-wsc" {
-  source               = "mehdi-wsc/vpc-wsc/aws"
-  version              = "0.0.3"
+  source  = "WeScale/vpc/aws"
+  version = "1.0.0"
+
   group                = var.group
   env                  = var.env
   region               = var.region
