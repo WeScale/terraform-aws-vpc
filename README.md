@@ -6,8 +6,8 @@
 ## Usage
 ```
 module "vpc-wsc" {
-  source  = "WeScale/vpc/aws"
-  version = "1.0.0"
+  source               = "WeScale/vpc/aws"
+  version              = "1.0.0"
   group                = "group"
   env                  = "dev"
   owner                = "github"
